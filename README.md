@@ -35,7 +35,6 @@ Example 1 : hello world!
 # checkout, build & execute
 
 * git checkout example-1-executable
-* Go to the repo path in terminal
 * Go build compile the go project
 	* go the workspace directory
 	* export GOPATH=$(pwd)
