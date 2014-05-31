@@ -35,7 +35,6 @@ Example 1 : hello world!
 # checkout, build & execute
 
 * git checkout example-1-executable
-* Go to the repo path in terminal
 * Go build compile the go project
 	* go the workspace directory
 	* export GOPATH=$(pwd)
@@ -77,7 +76,6 @@ Example 2 : Create a library
 # checkout, build & execute
 
 * git checkout example-2-library
-* Go to the repo path in terminal
 * Go build compile the go project
 	* go the workspace directory
 	* export GOPATH=$(pwd)
@@ -117,7 +115,6 @@ Example 3 : use the custom library method from the package we created in example
 # checkout, build & execute
 
 * git checkout example-3-use-custom-package
-* Go to the repo path in terminal
 * Go build compile the go project
 	* go the workspace directory
 	* export GOPATH=$(pwd)
