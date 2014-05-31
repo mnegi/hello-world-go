@@ -259,3 +259,22 @@ Example 5 : Using remote packages
 	Hello world!
 	Sqrt(2) = 1.414213562373095
 	```
+
+Example 6 : using packages with same name
+---
+# checkout, build & execute
+
+* git checkout example-6-packages-with-same-name
+* Go build compile the go project
+	* go the workspace directory
+	* export GOPATH=$(pwd)
+	* go build hello
+* Recreate the executable
+	* go install hello
+* Run the executable
+	* bin/hello
+	```
+	Hello world!
+	Sqrt(2) = 1.414213562373095
+	Sqrt(2) = 1.414213562373095
+	```
