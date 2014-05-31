@@ -40,25 +40,29 @@ Example 1 : hello world!
 	* go the workspace directory
 	* export GOPATH=$(pwd)
 	* go build hello
-	
-		├── README.md
-		├── bin
-		├── hello
-		├── pkg
-		└── src
-		    └── hello
-		        └── hello.go
+	```
+	├── README.md
+	├── bin
+	├── hello
+	├── pkg
+	└── src
+	    └── hello
+	        └── hello.go
+	```
+
 * Crete the executable
 	* go install hello
- 
-		├── README.md
-		├── bin
-		│   └── hello
-		├── hello
-		├── pkg
-		└── src
-		    └── hello
-		        └── hello.go
+	```
+	├── README.md
+	├── bin
+	│   └── hello
+	├── hello
+	├── pkg
+	└── src
+	    └── hello
+	        └── hello.go
+	```
+
 * Run the executable
 	* cd bin
 	* hello
