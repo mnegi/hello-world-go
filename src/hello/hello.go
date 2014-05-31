@@ -2,10 +2,10 @@
 package main
 
 // import standard fmt package  for formatted I/O functions
-// also import the newmath package that we created in example 2
+// also import the remote newmath package from google code repo
 import (
 	"fmt"
-	"newmath"
+	"code.google.com/p/go.example/newmath"
 	)
 
 // main function : the starting point of an executable go program

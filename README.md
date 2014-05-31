@@ -187,5 +187,75 @@ Example 4 : Testing packages
 	* go test newmath
 	```
 	ok  	newmath	0.032s
+	```
 
+Example 5 : Using remote packages
+---
+# checkout, build & execute
+
+* git checkout example-5-remote-packages
+* Build the newmath package
+	* go the workspace directory
+	* go build hello
+	```
+	src/hello/hello.go:8:2: cannot find package "code.google.com/p/go.example/newmath" in any of:
+	/usr/local/go/src/pkg/code.google.com/p/go.example/newmath (from $GOROOT)
+	/Users/mnegi/git/my-git-examples/hello-world-go/src/code.google.com/p/go.example/newmath (from $GOPATH)
+	```
+
+	```
+	.
+	├── README.md
+	├── bin
+	│   └── hello
+	├── pkg
+	│   └── darwin_amd64
+	│       └── newmath.a
+	└── src
+	    ├── hello
+	    │   └── hello.go
+	    └── newmath
+	        ├── sqrt.go
+	        └── sqrt_test.go
+	```
+* get the package
+	* go get code.google.com/p/go.example/newmath
+	```
+	.
+	├── README.md
+	├── bin
+	│   └── hello
+	├── pkg
+	│   └── darwin_amd64
+	│       ├── code.google.com
+	│       │   └── p
+	│       │       └── go.example
+	│       │           └── newmath.a
+	│       └── newmath.a
+	└── src
+	    ├── code.google.com
+	    │   └── p
+	    │       └── go.example
+	    │           ├── LICENSE
+	    │           ├── PATENTS
+	    │           ├── codereview.cfg
+	    │           ├── hello
+	    │           │   └── hello.go
+	    │           └── newmath
+	    │               ├── sqrt.go
+	    │               └── sqrt_test.go
+	    ├── hello
+	    │   └── hello.go
+	    └── newmath
+	        ├── sqrt.go
+	        └── sqrt_test.go
+	```	
+
+* build and install 
+	* go build hello
+	* go install hello
+	* bin/hello
+	```
+	Hello world!
+	Sqrt(2) = 1.414213562373095
 	```
