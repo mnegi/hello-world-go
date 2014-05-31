@@ -29,11 +29,12 @@ The location of the workspace.
 ## go env
 print Go environment information
 
----
-TEST: Checkout this branch
----
-# build & execute
 
+Example 1 : hello world!
+---
+# checkout, build & execute
+
+* git checkout example-1-executable
 * Go to the repo path in terminal
 * Go build compile the go project
 	go the workspace directory
@@ -59,10 +60,10 @@ TEST: Checkout this branch
 		    └── hello
 		        └── hello.go
 * Run the executable
-	cd bin
-	hello
+	* cd bin
+	* hello
 
 	or
 
-	export PATH=$PATH:$GOPATH/bin
-	hello
+	* export PATH=$PATH:$GOPATH/bin
+	* hello
