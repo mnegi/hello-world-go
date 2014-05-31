@@ -1,5 +1,4 @@
 # hello-world-go
----
 
 --source : http://golang.org/doc/code.html
 
@@ -19,16 +18,13 @@ A simple hello world program in go. The idea behind this small git repo is to se
  		* Using remote packages
 
 ## Workspace
----
 A workspace is a directory where you keep all your go code. In order to make most use of go tool, your should have 3 directories in it.
 	1. src
 	2. pkg
 	3. bin
 
 ## GOPATH
----
 The location of the workspace.
 
 ## go env
----
 print Go environment information
