@@ -50,7 +50,7 @@ Example 1 : hello world!
 	        └── hello.go
 	```
 
-* Crete the executable
+* Create the executable
 	* go install hello
 	```
 	├── README.md
@@ -71,3 +71,44 @@ Example 1 : hello world!
 
 	* export PATH=$PATH:$GOPATH/bin
 	* hello
+
+
+Example 2 : Create a library
+---
+# checkout, build & execute
+
+* git checkout example-2-library
+* Go to the repo path in terminal
+* Go build compile the go project
+	* go the workspace directory
+	* export GOPATH=$(pwd)
+	* go build newmath
+	```
+	.
+	├── README.md
+		├── bin
+		│   └── hello
+		├── pkg
+		└── src
+		    ├── hello
+		    │   └── hello.go
+		    └── newmath
+		        └── sqrt.go
+	```
+
+* Install the package
+	* go install newmath
+	```
+	.
+	├── README.md
+	├── bin
+	│   └── hello
+	├── pkg
+	│   └── darwin_amd64
+	│       └── newmath.a
+	└── src
+	    ├── hello
+	    │   └── hello.go
+	    └── newmath
+	        └── sqrt.go
+	```
