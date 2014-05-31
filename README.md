@@ -115,7 +115,6 @@ Example 3 : use the custom library method from the package we created in example
 # checkout, build & execute
 
 * git checkout example-3-use-custom-package
-* Go to the repo path in terminal
 * Go build compile the go project
 	* go the workspace directory
 	* export GOPATH=$(pwd)
