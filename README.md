@@ -76,7 +76,6 @@ Example 2 : Create a library
 # checkout, build & execute
 
 * git checkout example-2-library
-* Go to the repo path in terminal
 * Go build compile the go project
 	* go the workspace directory
 	* export GOPATH=$(pwd)
