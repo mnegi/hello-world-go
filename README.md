@@ -28,3 +28,41 @@ The location of the workspace.
 
 ## go env
 print Go environment information
+
+---
+TEST: Checkout this branch
+---
+# build & execute
+
+* Go to the repo path in terminal
+* Go build compile the go project
+	go the workspace directory
+	export GOPATH=$(pwd)
+	go build hello
+
+		├── README.md
+		├── bin
+		├── hello
+		├── pkg
+		└── src
+		    └── hello
+		        └── hello.go
+* Crete the executable
+	go install hello
+
+		├── README.md
+		├── bin
+		│   └── hello
+		├── hello
+		├── pkg
+		└── src
+		    └── hello
+		        └── hello.go
+* Run the executable
+	cd bin
+	hello
+
+	or
+
+	export PATH=$PATH:$GOPATH/bin
+	hello
