@@ -161,3 +161,35 @@ Example 3 : use the custom library method from the package we created in example
 	Hello world!
 	Sqrt(2) = 1.414213562373095
 	```
+
+Example 4 : Testing packages
+---
+# checkout, build & execute
+
+* git checkout example-4-testing-packages
+* Go to the repo path in terminal
+* Build the newmath package
+	* go build newmath
+	```
+	.
+	├── README.md
+	├── bin
+	│   └── hello
+	├── pkg
+	│   └── darwin_amd64
+	│       └── newmath.a
+	└── src
+	    ├── hello
+	    │   └── hello.go
+	    └── newmath
+	        ├── sqrt.go
+	        └── sqrt_test.go
+	```
+
+* Test the package
+	* go test newmath
+	```
+	ok  	newmath	0.032s
+
+
+	```
