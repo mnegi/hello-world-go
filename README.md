@@ -164,8 +164,8 @@ Example 4 : Testing packages
 # checkout, build & execute
 
 * git checkout example-4-testing-packages
-* Go to the repo path in terminal
 * Build the newmath package
+	* go the workspace directory
 	* go build newmath
 	```
 	.
@@ -187,6 +187,5 @@ Example 4 : Testing packages
 	* go test newmath
 	```
 	ok  	newmath	0.032s
-
 
 	```
