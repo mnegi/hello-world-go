@@ -37,10 +37,10 @@ Example 1 : hello world!
 * git checkout example-1-executable
 * Go to the repo path in terminal
 * Go build compile the go project
-	go the workspace directory
-	export GOPATH=$(pwd)
-	go build hello
-
+	* go the workspace directory
+	* export GOPATH=$(pwd)
+	* go build hello
+	* 
 		├── README.md
 		├── bin
 		├── hello
@@ -49,8 +49,8 @@ Example 1 : hello world!
 		    └── hello
 		        └── hello.go
 * Crete the executable
-	go install hello
-
+	* go install hello
+	* 
 		├── README.md
 		├── bin
 		│   └── hello
