@@ -72,7 +72,6 @@ Example 1 : hello world!
 	* export PATH=$PATH:$GOPATH/bin
 	* hello
 
-
 Example 2 : Create a library
 ---
 # checkout, build & execute
@@ -111,4 +110,54 @@ Example 2 : Create a library
 	    │   └── hello.go
 	    └── newmath
 	        └── sqrt.go
+	```
+
+Example 3 : use the custom library method from the package we created in example2 
+---
+# checkout, build & execute
+
+* git checkout example-3-use-custom-package
+* Go to the repo path in terminal
+* Go build compile the go project
+	* go the workspace directory
+	* export GOPATH=$(pwd)
+	* go build hello
+	```
+	.
+	├── README.md
+	├── bin
+	│   └── hello
+	├── hello
+	├── pkg
+	│   └── darwin_amd64
+	│       └── newmath.a
+	└── src
+	    ├── hello
+	    │   └── hello.go
+	    └── newmath
+	        └── sqrt.go
+	```
+
+* Recreate the executable
+	* go install newmath
+	```
+	.
+	├── README.md
+	├── bin
+	│   └── hello
+	├── hello
+	├── pkg
+	│   └── darwin_amd64
+	│       └── newmath.a
+	└── src
+	    ├── hello
+	    │   └── hello.go
+	    └── newmath
+	        └── sqrt.go
+	```
+* Run the executable
+	* bin/hello
+	```
+	Hello world!
+	Sqrt(2) = 1.414213562373095
 	```
